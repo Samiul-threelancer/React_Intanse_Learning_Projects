@@ -3,7 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 const Book = () => {
-    const [apidata, setapidata] =useState({})
+    const [apidata, setapidata] =useState([])
 
 
    useEffect(()=>{
@@ -14,7 +14,7 @@ const Book = () => {
     })
     
 
-   },[])
+   }, [])
      
 
 
@@ -25,9 +25,7 @@ const Book = () => {
 
                 return(
                     <div>
-                        <table>
-                            
-                        </table>
+                        
                         <h1>{data.id}</h1>
                         <h1>{data.productname}</h1>
                         <h1>{data.size}</h1>
