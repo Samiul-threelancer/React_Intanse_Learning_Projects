@@ -1,0 +1,71 @@
+.divone {
+    width: 20%;
+    
+    margin: 0 0px 0 750px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    border-width: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+}
+.pone{
+    text-align: center;
+    color: rgb(155, 46, 52);
+}
+
+.logindiv{
+    width: 20%;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 5%;
+    margin: 80px 0px 0 750px;
+    border-width: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+    text-align: center;
+}
+
+.inputtype {
+    width: 65%;
+    height: 50px;
+    border: 1px solid black;
+    margin: 8px 0;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 254);
+    font-size: medium;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button{
+    background-color: rgb(206, 206, 206);
+    width: 35%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+button:hover{
+    background-color: rgb(4, 160, 64);
+    
+}
+
+.blogdiv{
+    width: 20%;
+    height: 80px;
+    background-color: rgb(228, 137, 18);
+    border-radius: 10px;
+    border-style: solid ;
+    border-color: black;
+    border-width: 1px;
+    align-items: center;
+    margin: 25px 25px;
+    padding-top: 20px;
+
+}
+
+
+
