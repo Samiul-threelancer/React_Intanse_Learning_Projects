@@ -33,15 +33,22 @@ const Blog = () => {
       
      return(
         <>
-       {getdata.slice(0,50).map((item, i) =>{
+       {getdata.slice(0,5).map((item, i) =>{
         return( 
           
           <div>
 
             <div className="blogdiv">
 
-           <p>{item.title}</p>
-           <h5>{item.body}</h5>
+
+              <tr>
+              <td>{item.title}</td>
+              <td>{item.body}</td>
+              <td><button>Update</button></td>
+              <td><button>Delete</button></td>
+              <td></td>
+                
+              </tr>
            
           <button type="submit" className="blogbutton" onClick={Bloghandle}>  Details...</button>
 

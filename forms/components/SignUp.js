@@ -37,12 +37,6 @@ const addData=(e)=>{
   const{email, phone, password} = inpval
 
 
-  if(email & phone & password === ""){
-    alert(  
-
-    )
-  }
-
 
   if(email === "")
   {
@@ -58,12 +52,16 @@ const addData=(e)=>{
   { 
     alert("Phone is required!")
     return}
+    else if(phone.length<11)
+  { 
+    alert("Enter valid phone number")
+    return}
   else if(password === "")
   {
     alert("Password is required!")
     return
 }
-  else if (password.length<4)
+  else if (password.length<8)
   {alert("Password is less than 5")
   return
  }
@@ -84,8 +82,7 @@ const addData=(e)=>{
             <form onSubmit={addData}>
             <input type="email" onChange={getdata}  placeholder="Email" name='email' className="inputtype"/> 
             <p>{alert.email}</p>
-         
-             
+
 
             <input type="phone" onChange={getdata}  placeholder="Number" name='phone' className="inputtype"/>
             
