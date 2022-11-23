@@ -16,6 +16,7 @@ const Profile = () =>{
                     <Link to="/signup">SignUp</Link>
                     <Link to="/photographs">Photographs</Link>
                     <Link to="/buttonstate">Button State</Link>
+                    <Link to="/product"><div style={{color:"black"}}><h1>Product</h1></div></Link>
 
 
                     

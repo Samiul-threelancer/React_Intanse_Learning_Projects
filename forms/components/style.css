@@ -63,5 +63,10 @@ button:hover{
   background-color: rgb(255, 255, 255);
 }
 
+#table tr, table td{
+
+    border-radius: 10px solid;
+    border-color: black;
+}
 
 

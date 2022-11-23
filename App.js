@@ -7,6 +7,7 @@ import Blog from "./forms/components/Blog";
 import BlogBody from "./forms/components/BlogBody";
 import Photographs from "./forms/components/Photographs";
 import Buttonstate from "./forms/components/Buttonstate"; 
+import Product from "./forms/components/Product";
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route exact path={'/blogbody'} component={BlogBody}></Route>
           <Route exact path={'/photographs'} component={Photographs}></Route>
           <Route exact path={'/Buttonstate'} component={Buttonstate}></Route>
+          <Route exact path={'/product'} component={Product}></Route>
 
 
 

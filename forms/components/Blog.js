@@ -40,18 +40,15 @@ const Blog = () => {
 
             <div className="blogdiv">
 
-
+              <table className="table">
               <tr>
               <td>{item.title}</td>
               <td>{item.body}</td>
               <td><button>Update</button></td>
               <td><button>Delete</button></td>
-              <td></td>
-                
+            
               </tr>
-           
-          <button type="submit" className="blogbutton" onClick={Bloghandle}>  Details...</button>
-
+              </table>
 
             </div>
           
