@@ -25,11 +25,15 @@ const Book = () => {
 
                 return(
                     <div>
-                        
-                        <h1>{data.id}</h1>
-                        <h1>{data.productname}</h1>
-                        <h1>{data.size}</h1>
-                        <h1>{data.quantity}</h1>
+                        <table>
+                            <tr>
+                            <td>{data.id}</td>
+                            <td>{data.productname}</td>
+                            <td>{data.size}</td>
+                            <td>{data.quantity}</td>
+                            </tr>
+                        </table>
+
 
                     </div>
                 )
