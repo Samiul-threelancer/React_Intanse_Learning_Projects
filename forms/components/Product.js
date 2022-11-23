@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React from 'react'
+import { useEffect } from 'react'
 import { useState } from 'react'
 
 const Product = () => {
@@ -33,12 +34,7 @@ const aData = async (e)=>{
  
 
     )
-
-
-// const getd(() => {
-//     axios.get(`https://6363700637f2167d6f7969ea.mockapi.io/crudtwo`, then)
-// })
-    
+   
 
 }
 
