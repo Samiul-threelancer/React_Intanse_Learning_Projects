@@ -1,22 +1,37 @@
 import axios from "axios";
 import React from "react";
 import { useEffect, useState } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
-const clg = 5+5
+import { Link } from "react-router-dom";
+// const clg = 5+5
 const Book = () => {
     const [apidata, setapidata] =useState([])
+    const [callback, setcallback]= useState(false)
+  
 
 
    useEffect(()=>{
     axios.get(`https://6363700637f2167d6f7969ea.mockapi.io/crudtwo/`) 
     .then((getData)=>{
         setapidata(getData.data)
-        console.log(getData)
+        //console.log(getData)
     })
-    
+   }, [callback])
 
-   }, [])
-     
+
+   const setID = (id) =>{
+    console.log(id);
+    localStorage.setItem("ID", id)
+   }
+
+   const onDelete = (id) =>{
+
+    axios.delete(`https://6363700637f2167d6f7969ea.mockapi.io/crudtwo/${id}`)
+    .then((getData) =>{
+        
+        setcallback(!callback)
+
+    })
+   }
 
 
     return(
@@ -35,7 +50,6 @@ const Book = () => {
                     
 
                     
-
                 </tr>
 
                 </thead>
@@ -51,15 +65,15 @@ const Book = () => {
                             <td>{data.size}</td>
                             <td>{data.quantity}</td>
                             <td>
-                                <Link to = "/update" >
-                                <button>Update</button>
+                                <Link to="/update" >
+                                <button onClick={()=>setID(data.id)}>Update</button>
                                 </Link>
                             </td>
                             
                             <td>
-                                <Link to = "/delete" >
-                                <button>Delete</button>
-                                </Link>
+                                
+                                <button onClick={() => onDelete(data.id)}>Delete</button>
+                                
                             </td>
                             
                             </tr>

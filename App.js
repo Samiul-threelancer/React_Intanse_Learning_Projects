@@ -36,9 +36,8 @@ function App() {
           <Route exact path={'/update'} component={Update}></Route>
           <Route exact path={'/delete'} component={Delete}></Route>
 
-
-
-        </Switch>
+       </Switch>
+          
           
           
           </Router>
