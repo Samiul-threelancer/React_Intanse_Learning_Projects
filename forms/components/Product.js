@@ -27,7 +27,7 @@ setval(()=>{
 }
 
 const aData = async (e)=>{
-    e.preventDefault()
+    // e.preventDefault()
 
    
     await axios.post(`https://6363700637f2167d6f7969ea.mockapi.io/crudtwo`, {...val}

@@ -19,25 +19,51 @@ const Book = () => {
 
 
     return(
-
+   
         <div>
-            {apidata.map((data) => {
+
+            <table className="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                    
+
+                    
+
+                </tr>
+
+                </thead>
+                <tbody>
+            {apidata.map((data, i) => {
 
                 return(
-                    <div>
-                        <table>
-                            <tr>
+                    
+                        
+                            <tr key={i}>
                             <td>{data.id}</td>
                             <td>{data.productname}</td>
                             <td>{data.size}</td>
                             <td>{data.quantity}</td>
+                            <td><button>Update</button></td>
+                            <td><button>Delete</button></td>
+                            
                             </tr>
-                        </table>
+                        
 
 
-                    </div>
+                   
                 )
             })}
+
+           </tbody>
+
+           
+            </table>
 
             
         </div>
