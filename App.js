@@ -9,6 +9,8 @@ import Photographs from "./forms/components/Photographs";
 import Buttonstate from "./forms/components/Buttonstate"; 
 import Product from "./forms/components/Product";
 import Book from "./forms/components/Book";
+import Update from "./forms/components/Update";
+import Delete from "./forms/components/Delete";
 
 
 
@@ -31,6 +33,8 @@ function App() {
           <Route exact path={'/Buttonstate'} component={Buttonstate}></Route>
           <Route exact path={'/product'} component={Product}></Route>
           <Route exact path={'/book'} component={Book}></Route>
+          <Route exact path={'/update'} component={Update}></Route>
+          <Route exact path={'/delete'} component={Delete}></Route>
 
 
 

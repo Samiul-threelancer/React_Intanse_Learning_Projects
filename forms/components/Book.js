@@ -1,7 +1,8 @@
 import axios from "axios";
 import React from "react";
 import { useEffect, useState } from "react";
-
+import { BrowserRouter as Link } from "react-router-dom";
+const clg = 5+5
 const Book = () => {
     const [apidata, setapidata] =useState([])
 
@@ -49,8 +50,17 @@ const Book = () => {
                             <td>{data.productname}</td>
                             <td>{data.size}</td>
                             <td>{data.quantity}</td>
-                            <td><button>Update</button></td>
-                            <td><button>Delete</button></td>
+                            <td>
+                                <Link to = "/update" >
+                                <button>Update</button>
+                                </Link>
+                            </td>
+                            
+                            <td>
+                                <Link to = "/delete" >
+                                <button>Delete</button>
+                                </Link>
+                            </td>
                             
                             </tr>
                         
